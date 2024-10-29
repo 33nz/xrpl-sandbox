@@ -1,5 +1,4 @@
 # XRPL wallet 
-## XRP Ledger Fundamentals and Development
 
 ## Project Summary
 
