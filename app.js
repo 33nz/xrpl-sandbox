@@ -13,7 +13,7 @@ const displayLastLedgerIndex = async () => {
     `Hello world from the XRP ledger, the last index was: ${ledgerInfo.result.ledger_index}`
   )
 
-  await client.disconnect() // close down coneection when finished
+  await client.disconnect() // close down connection when finished
 }
 
 displayLastLedgerIndex()
