@@ -15,7 +15,3 @@ console.log(wallet)
 
 const rAddress = deriveAddress(wallet.seed)
 console.log(rAddress)
-
-
-
-dkkdkfjdjfdsfdj fsdk
