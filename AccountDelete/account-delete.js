@@ -19,7 +19,7 @@ try {
   // Prepare the transaction
   const prepared = await client.autofill({
     ...deleteTx,
-    LastLedgerSequence: (await client.getLedgerIndex()) + 1000,
+    LastLedgerSequence: (await client.getLedgerIndex()) + 1000, // add sequence to extend the time window
   }) // Autofill to save time
 
   // Sign the transaction
