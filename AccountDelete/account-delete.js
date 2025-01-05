@@ -17,7 +17,10 @@ try {
   }
 
   // Prepare the transaction
-  const prepared = await client.autofill(deleteTx) // Autofill to save time
+  const prepared = await client.autofill({
+    ...deleteTx,
+    LastLedgerSequence: (await client.getLedgerIndex()) + 1000,
+  }) // Autofill to save time
 
   // Sign the transaction
   const signed = wallet.sign(prepared)
