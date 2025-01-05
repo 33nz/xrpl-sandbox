@@ -12,7 +12,7 @@ try {
   const payment = {
     Account: wallet.classicAddress, // rAddress of the sending account
     TransactionType: 'Payment', // case important
-    Amount: xrpToDrops(1), // Important: Amount of XRP, converted to drops
+    Amount: xrpToDrops(12), // Important: Amount of XRP, converted to drops
     Destination: 'rs2eb24PLdXjwQJnsE5phieHgSy1j4eJHe',
   }
 
